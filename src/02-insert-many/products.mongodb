@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    title: "Juguete Masticable para Perros",
+    price: 12.99,
+    description: "Juguete resistente para perros que ayuda a mantener sus dientes limpios y fuertes.",
+    category: "Juguetes",
+    image: "Juguete_Masticable_Perros.jpg"
+  },
+  {
+    _id: 2,
+    title: "Rascador para Gatos",
+    price: 19.99,
+    description: "Rascador de sisal para gatos, perfecto para mantener sus garras sanas y entretenidos.",
+    category: "Accesorios",
+    image: "Rascador_para_Gatos"
+  },
+  {
+    _id: 3,
+    title: "Pienso Premium para Perros",
+    price: 29.99,
+    description: "Alimento balanceado con ingredientes de alta calidad para perros de todas las razas.",
+    category: "Alimentación",
+    image: "Pienso_Premium_Perros.jpg"
+  },
+  {
+    _id: 4,
+    title: "Collar Reflectante para Perros",
+    price: 8.99,
+    description: "Collar ajustable con material reflectante para mayor visibilidad durante paseos nocturnos.",
+    category: "Accesorios",
+    image: "Collar_Reflectante_Perros.jpg"
+  },
+  {
+    _id: 5,
+    title: "Cama Ortopédica para Mascotas",
+    price: 39.99,
+    description: "Cama ortopédica que brinda apoyo y comodidad, ideal para mascotas mayores o con problemas articulares.",
+    category: "Camas",
+    image: "Cama_Ortopédica_Mascotas.jpg"
+  },
+  {
+    _id: 6,
+    title: "Comedero Automático para Gatos",
+    price: 24.99,
+    description: "Comedero automático con temporizador para gatos, ideal para mantener horarios de alimentación regulares.",
+    category: "Accesorios",
+    image: "Comedero_Automático_Gatos.jpg"
+  },
+  {
+    _id: 7,
+    title: "Correa Extensible para Perros",
+    price: 15.99,
+    description: "Correa extensible para perros que brinda libertad de movimiento durante los paseos.",
+    category: "Accesorios",
+    image: "Correa_Extensible_Perros.jpg"
+  },
+  {
+    _id: 8,
+    title: "Juguete Interactivo para Gatos",
+    price: 14.99,
+    description: "Juguete interactivo con plumas y luces LED para estimular el instinto de caza de los gatos.",
+    category: "Juguetes",
+    image: "Juguete_Interactivo_Gatos.jpg"
+  },
+  {
+    _id: 9,
+    title: "Arenero Autolimpiable para Gatos",
+    price: 49.99,
+    description: "Arenero con sistema autolimpiable que facilita el mantenimiento y la limpieza diaria.",
+    category: "Accesorios",
+    image: "Arenero_Autolimpiable_Gatos.jpg"
+  },
+  {
+    _id: 10,
+    title: "Snacks Naturales para Perros",
+    price: 6.99,
+    description: "Snacks naturales y saludables para premiar a tu perro durante el entrenamiento.",
+    category: "Alimentación",
+    image: "Snacks_Naturales_Perros.jpg"
+  },
+  {
+    _id: 11,
+    title: "Cepillo para Gatos",
+    price: 7.99,
+    description: "Cepillo suave para gatos que ayuda a reducir la caída de pelo y mantener su pelaje brillante.",
+    category: "Cuidado Personal",
+    image: "Cepillo_Gatos.jpg"
+  },
+  {
+    _id: 12,
+    title: "Arnés Ajustable para Conejos",
+    price: 11.99,
+    description: "Arnés ajustable y cómodo para conejos, perfecto para paseos al aire libre.",
+    category: "Accesorios",
+    image: "Arnés_Ajustable_Conejos.jpg"
+  },
+  {
+    _id: 13,
+    title: "Paquete de Juguetes Variados para Mascotas",
+    price: 22.99,
+    description: "Paquete que incluye una variedad de juguetes para mantener a tus mascotas entretenidas.",
+    category: "Juguetes",
+    image: "Paquete_Juguetes_Variados_Mascotas.jpg"
+  },
+  {
+    _id: 14,
+    title: "Champú Hipoalergénico para Perros",
+    price: 9.99,
+    description: "Champú suave y hipoalergénico para perros con piel sensible.",
+    category: "Cuidado Personal",
+    image: "Champú_Hipoalergénico_Perros.jpg"
+  },
+  {
+    _id: 15,
+    title: "Transportadora para Gatos y Perros Pequeños",
+    price: 34.99,
+    description: "Bolso transportador cómodo y seguro para gatos y perros pequeños, ideal para viajes.",
+    category: "Accesorios",
+    image: "Transportadora_Gatos_Perros_Pequeños.jpg"
+  },
+  {
+    _id: 16,
+    title: "Comida Húmeda para Gatos",
+    price: 2.99,
+    description: "Comida húmeda de alta calidad con sabores variados para satisfacer el paladar exigente de los gatos.",
+    category: "Alimentación",
+    image: "Comida_Húmeda_Gatos.jpg"
+  },
+  {
+    _id: 17,
+    title: "Ropa de Invierno para Perros",
+    price: 18.99,
+    description: "Abrigo cálido y elegante para perros, ideal para protegerlos del frío invernal.",
+    category: "Accesorios",
+    image: "Ropa_Invierno_Perros.jpg"
+  },
+  {
+    _id: 18,
+    title: "Juguete Dispensador de Golosinas para Perros",
+    price: 13.99,
+    description: "Juguete interactivo que dispensa golosinas, ideal para estimular la mente de tu perro.",
+    category: "Juguetes",
+    image: "Juguete_Dispensador_Golosinas_Perros.jpg"
+  },
+  {
+    _id: 19,
+    title: "Cepillo de Dientes para Perros",
+    price: 5.99,
+    description: "Cepillo de dientes diseñado para la higiene dental de los perros, ayuda a prevenir problemas bucales.",
+    category: "Cuidado Personal",
+    image: "Cepillo_Dientes_Perros.jpg"
+  },
+  {
+    _id: 20,
+    title: "Pelota Saltarina para Conejos",
+    price: 7.99,
+    description: "Pelota de goma que rebota para conejos, ideal para fomentar el ejercicio y la diversión.",
+    category: "Juguetes",
+    image: "Pelota_Saltarina_Conejos.jpg"
+  }
+])
