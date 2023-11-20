@@ -1,0 +1,125 @@
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 2 },
+  {
+    $set: {
+      price: 24.99,
+      description: "Rascador para gatos de alta resistencia con base estable y poste de sisal natural para el cuidado óptimo de las garras.",
+      category: "Accesorios para Gatos",
+      image: "Nuevo_Rascador_para_Gatos.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 5 },
+  {
+    $set: {
+      price: 45.99,
+      description: "Cama ortopédica premium con memory foam para brindar soporte máximo a mascotas con problemas articulares o envejecimiento.",
+      image: "Nueva_Cama_Ortopédica_Mascotas.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 6 },
+  {
+    $set: {
+      price: 29.99,
+      description: "Comedero automático programable con dispensador controlado para una alimentación precisa y regular de tu gato.",
+      image: "Nuevo_Comedero_Automático_Gatos.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 7 },
+  {
+    $set: {
+      price: 18.99,
+      description: "Correa extensible con mango ergonómico y sistema de frenado para un control seguro durante los paseos con tu perro.",
+      image: "Nueva_Correa_Extensible_Perros.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 10 },
+  {
+    $set: {
+      price: 8.99,
+      description: "Snacks naturales y sabrosos elaborados con ingredientes premium ideales para el entrenamiento y la recompensa de tu perro.",
+      image: "Nuevos_Snacks_Naturales_Perros.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 11 },
+  {
+    $set: {
+      price: 10.99,
+      description: "Cepillo suave y ergonómico para gatos que ayuda a minimizar la formación de nudos y mantener un pelaje sedoso.",
+      category: "Cuidado del Pelaje",
+      image: "Nuevo_Cepillo_Gatos.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 12 },
+  {
+    $set: {
+      price: 14.99,
+      description: "Arnés ajustable con acolchado suave y resistente para paseos cómodos y seguros con tu conejo.",
+      image: "Nuevo_Arnés_Ajustable_Conejos.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 14 },
+  {
+    $set: {
+      price: 12.99,
+      description: "Champú hipoalergénico y calmante para perros con piel sensible, enriquecido con aloe vera y extractos naturales.",
+      image: "Nuevo_Champú_Hipoalergénico_Perros.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 17 },
+  {
+    $set: {
+      price: 22.99,
+      description: "Abrigo de invierno con forro polar y diseño ajustable para proporcionar calidez y comodidad a tu perro en días fríos.",
+      image: "Nuevo_Abrigo_Invierno_Perros.jpg"
+    }
+  }
+);
+
+db.products.updateOne(
+  { _id: 18 },
+  {
+    $set: {
+      price: 15.99,
+      description: "Juguete interactivo dispensador de golosinas con laberinto interior para mantener a tu perro entretenido y mentalmente activo.",
+      image: "Nuevo_Juguete_Dispensador_Golosinas_Perros.jpg"
+    }
+  }
+);
